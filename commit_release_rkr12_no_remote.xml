@@ -1053,14 +1053,14 @@
   <project groups="pdk,tradefed" name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="tools,pdk" name="platform/tools/treble" path="tools/treble" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" name="platform/tools/trebuchet" path="tools/trebuchet" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
-<!--   <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
+  <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
     <copyfile dest="build.sh" src="build/rockchip/build.sh"/>
     <copyfile dest="mkimage_ab.sh" src="mkimage_ab.sh"/>
-  </project> -->
+  </project>
   <project name="rk/hardware/libgralloc/bifrost" path="hardware/rockchip/libgralloc/bifrost" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/hardware/libgralloc/midgard" path="hardware/rockchip/libgralloc/midgard" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/hardware/libgralloc/utgard_new" path="hardware/rockchip/libgralloc/utgard" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>

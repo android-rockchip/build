@@ -39,16 +39,16 @@
   <project name="RKTools" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="external/camera_engine_rkaiq" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="platform/hardware/realtek" path="hardware/realtek" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
-  <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
+  <!-- <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/> -->
   <!-- <project name="rk/kernel" path="kernel-5.10" remote="rk29" upstream="refs/tags/Android12_Radxa_rk12_12.1"/> -->
   <project name="platform/mkcombinedroot" path="mkcombinedroot" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
-  <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1">
+<!--   <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
     <copyfile dest="build.sh" src="build/rockchip/build.sh"/>
     <copyfile dest="mkimage_ab.sh" src="mkimage_ab.sh"/>
-  </project>
+  </project> -->
   <project name="rk/u-boot" path="u-boot" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="pdk" name="platform/bootable/recovery/recovery" path="bootable/recovery" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
