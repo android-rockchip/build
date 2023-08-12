@@ -84,7 +84,7 @@
   <project groups="pdk" name="platform/external/FP16" path="external/FP16" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="pdk" name="platform/external/FXdiv" path="external/FXdiv" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="pdk" name="platform/external/ImageMagick" path="external/ImageMagick" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
-  <project name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS" upstream="refs/tags/android-12.1-mid-rkr8"/>
+  <!-- <project name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS" upstream="refs/tags/android-12.1-mid-rkr8"/> -->
   <project groups="pdk" name="platform/external/OpenCSD" path="external/OpenCSD" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="pdk" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="pdk" name="platform/external/XNNPACK" path="external/XNNPACK" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
@@ -1053,16 +1053,14 @@
   <project groups="pdk,tradefed" name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="tools,pdk" name="platform/tools/treble" path="tools/treble" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" name="platform/tools/trebuchet" path="tools/trebuchet" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
-  <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
+<!--   <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1">
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
     <copyfile dest="javaenv.sh" src="javaenv.sh"/>
     <copyfile dest="build.sh" src="build/rockchip/build.sh"/>
     <copyfile dest="mkimage_ab.sh" src="mkimage_ab.sh"/>
-    <copyfile dest="kernel-4.19/.find-ignore" src="build/rockchip/blank_file"/>
-    <copyfile dest="kernel-5.10/.find-ignore" src="build/rockchip/blank_file"/>
-  </project>
+  </project> -->
   <project name="rk/hardware/libgralloc/bifrost" path="hardware/rockchip/libgralloc/bifrost" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/hardware/libgralloc/midgard" path="hardware/rockchip/libgralloc/midgard" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
   <project name="rk/hardware/libgralloc/utgard_new" path="hardware/rockchip/libgralloc/utgard" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
