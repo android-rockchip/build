@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="aosp" fetch="https://gitlab.com/rockchip_android_s" />
+	<remote name="aosp" fetch="https://android.googlesource.com" />
 	<remote name="ohd" fetch="https://gitlab.com/rockchip_android_s" />
 	<remote name="rk" fetch="https://gitlab.com/rockchip_android_s" />
 	<remote name="rk29" fetch="https://gitlab.com/rockchip_android_s" />
