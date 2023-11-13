@@ -80,7 +80,7 @@
 
 	<project name="u-boot" path="u-boot" remote="ar_gh" revision="master" />
 	<project name="kernel_rockchip_5.10" path="kernel/rockchip/kernel-5.10" remote="ar_gh" revision="master" />
-	<project name="device_rockchip" path="device/rockchip" remote="ar_gh" revision="refs/tags/r1" upstream="refs/tags/r1">
+	<project name="device_rockchip" path="device/rockchip" remote="ar_gh" revision="master">
 		<copyfile dest=".classpath" src="common/.classpath"/>
 		<copyfile dest="mkimage.sh" src="common/mkimage.sh"/>
 		<copyfile dest="javaenv.sh" src="common/javaenv.sh"/>
