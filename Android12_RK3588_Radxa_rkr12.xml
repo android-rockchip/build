@@ -49,7 +49,7 @@
     <copyfile dest="build.sh" src="build/rockchip/build.sh"/>
     <copyfile dest="mkimage_ab.sh" src="mkimage_ab.sh"/>
   </project> -->
-	<project name="rk/u-boot" path="u-boot" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
+	<!-- <project name="rk/u-boot" path="u-boot" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/> -->
 	<project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
 	<project groups="pdk" name="platform/bootable/recovery/recovery" path="bootable/recovery" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
 	<project groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
