@@ -35,6 +35,7 @@
 	<remove-project name="platform/frameworks/opt/net/wifi" />
 	<remove-project name="platform/hardware/realtek" />
 	<remove-project name="external/camera_engine_rkaiq" />
+	<remove-project name="rk/u-boot" />
 
 	<project name="RKTools" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
 	<project name="external/camera_engine_rkaiq" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1"/>
@@ -78,7 +79,8 @@
 
 	<remove-project name="platform/external/OpenCL-CTS" />
 
-	<project name="kernel_rockchip_5.10" path="kernel/rockchip/kernel-5.10" remote="ar_gh" revision="refs/tags/opi5" upstream="refs/tags/opi5"/>
+	<project name="rk/u-boot" path="u-boot" remote="ar_gh" revision="master" />
+	<project name="kernel_rockchip_5.10" path="kernel/rockchip/kernel-5.10" remote="ar_gh" revision="master" />
 	<project name="device_rockchip" path="device/rockchip" remote="ar_gh" revision="refs/tags/r1" upstream="refs/tags/r1">
 		<copyfile dest=".classpath" src="common/.classpath"/>
 		<copyfile dest="mkimage.sh" src="common/mkimage.sh"/>
@@ -86,4 +88,5 @@
 		<copyfile dest="build.sh" src="common/build/rockchip/build.sh"/>
 		<copyfile dest="mkimage_ab.sh" src="common/mkimage_ab.sh"/>
 	</project>
+	<project name="device_orangepi" path="device/orangepi" remote="ar_gh" upstream="master" />
 </manifest>
