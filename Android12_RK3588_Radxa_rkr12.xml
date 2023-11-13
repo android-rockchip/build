@@ -78,7 +78,7 @@
 
 	<remove-project name="platform/external/OpenCL-CTS" />
 
-	<project name="rk/u-boot" path="u-boot" remote="ar_gh" revision="master" />
+	<project name="u-boot" path="u-boot" remote="ar_gh" revision="master" />
 	<project name="kernel_rockchip_5.10" path="kernel/rockchip/kernel-5.10" remote="ar_gh" revision="master" />
 	<project name="device_rockchip" path="device/rockchip" remote="ar_gh" revision="refs/tags/r1" upstream="refs/tags/r1">
 		<copyfile dest=".classpath" src="common/.classpath"/>
