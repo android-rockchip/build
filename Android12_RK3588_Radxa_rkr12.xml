@@ -87,5 +87,5 @@
 		<copyfile dest="build.sh" src="common/build/rockchip/build.sh"/>
 		<copyfile dest="mkimage_ab.sh" src="common/mkimage_ab.sh"/>
 	</project>
-	<project name="device_orangepi" path="device/orangepi" remote="ar_gh" upstream="master" />
+	<project name="device_orangepi" path="device/orangepi" remote="ar_gh" revision="master" />
 </manifest>
