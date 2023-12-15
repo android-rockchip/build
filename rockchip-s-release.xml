@@ -7,5 +7,5 @@
 	<remote name="rk_legacy" fetch="https://gitlab.com/rockchip_android_s" />
 	<remote name="ar_gh" fetch="https://github.com/android-rockchip" />
 
-	<include name="Android12_RK3588_Radxa_rkr12.xml" />
+	<include name="Android12_rkr12_custom.xml" />
 </manifest>
