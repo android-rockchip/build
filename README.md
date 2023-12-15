@@ -8,3 +8,5 @@ source build/envsetup.sh
 lunch orangepi5-userdebug
 ./build.sh -AUKu
 ```
+
+Based on Radxa sources repository - https://gitlab.com/rockchip_android_s
