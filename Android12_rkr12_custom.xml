@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<include name="Android12_rkr12_base.xml" />
-
-	<!-- gitlab conflict -->
-	<remove-project name="platform/build" />
-	<remove-project name="platform/bootable/recovery" />
-	<remove-project name="rk/platform/vendor/rockchip/hardware" />
-	<remove-project name="platform/prebuilts/module_sdk" />
+	<include name="Android12_exclude.xml" />
 
 	<project name="platform/build/build" path="build/make" upstream="refs/tags/Android12_Radxa_rk12_12.1">
 		<copyfile src="core/root.mk" dest="Makefile" />
@@ -20,72 +15,21 @@
 	<project name="platform/bootable/recovery/recovery" path="bootable/recovery" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project name="rk/platform/vendor/rockchip/hardware/hardware" path="vendor/rockchip/hardware" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project clone-depth="1" name="platform/prebuilts/module_sdk/module_sdk" path="prebuilts/module_sdk" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
-	<!-- gitlab conflict end -->
-
-	<!-- Radxa customization -->
-	<remove-project name="RKTools" />
-	<remove-project name="rk/device/rockchip/rk3588" />
-	<remove-project name="rk/kernel" />
-	<remove-project name="platform/mkcombinedroot" />
-	<remove-project name="rk/device/rockchip/rksdk" />
-	<remove-project name="rk/u-boot" />
-	<remove-project name="rk/platform/vendor/rockchip/common" />
-	<remove-project name="platform/bootable/recovery/recovery" />
-	<remove-project name="platform/frameworks/base" />
-	<remove-project name="platform/frameworks/opt/net/wifi" />
-	<remove-project name="platform/hardware/realtek" />
-	<remove-project name="external/camera_engine_rkaiq" />
 
 	<project name="RKTools" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project name="external/camera_engine_rkaiq" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project name="platform/hardware/realtek" path="hardware/realtek" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
-	<!-- <project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" /> -->
-	<!-- <project name="rk/kernel" path="kernel-5.10" remote="rk29" upstream="refs/tags/Android12_Radxa_rk12_12.1" /> -->
 	<project name="platform/mkcombinedroot" path="mkcombinedroot" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
-	<!--   <project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1">
-    <copyfile dest=".classpath" src=".classpath" />
-    <copyfile dest="mkimage.sh" src="mkimage.sh" />
-    <copyfile dest="javaenv.sh" src="javaenv.sh" />
-    <copyfile dest="build.sh" src="build/rockchip/build.sh" />
-    <copyfile dest="mkimage_ab.sh" src="mkimage_ab.sh" />
-  </project> -->
-	<!-- <project name="rk/u-boot" path="u-boot" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" /> -->
 	<project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project groups="pdk" name="platform/bootable/recovery/recovery" path="bootable/recovery" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project groups="pdk" name="platform/frameworks/base" path="frameworks/base" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project name="platform/external/exfatprogs" path="external/exfatprogs" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
-	<!-- Radxa customization end -->
-	<!-- gitlab size reduce -->
-	<remove-project name="platform/external/chromium-webview" />
-	<remove-project name="kernel/prebuilts/5.10/arm64" />
-	<remove-project name="platform/prebuilts/android-emulator" />
-	<remove-project name="platform/prebuilts/clang/host/linux-x86" />
-	<remove-project name="platform/prebuilts/rust" />
-	<remove-project name="platform/prebuilts/sdk" />
-	<remove-project name="platform/prebuilts/tools" />
 
-	<!--	<project clone-depth="1" groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
-	<project clone-depth="1" groups="pdk" name="kernel/prebuilts/5.10/arm64" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
- 	<project clone-depth="1" groups="pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
-	<project clone-depth="1" groups="pdk,darwin" name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" /> -->
 	<project clone-depth="1" groups="pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
 	<project clone-depth="1" groups="pdk" name="platform/prebuilts/rust" path="prebuilts/rust" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
 	<project clone-depth="1" groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
 	<project clone-depth="1" groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="Android12_RK3588_Radxa_rk8" upstream="Android12_RK3588_Radxa_rk8" />
-	<!-- gitlab size reduce end-->
-
-	<remove-project name="platform/external/OpenCL-CTS" />
-
-	<!-- We don't need any darwin related stuff-->
-	<remove-project name="platform/prebuilts/bazel/darwin-x86_64" />
-	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
-	<remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
-	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
-	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-	<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-	<remove-project name="platform/prebuilts/go/darwin-x86" />
-	<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
 	<project name="u-boot" path="u-boot" remote="ar_gh" revision="master" />
 	<project name="kernel_rockchip_5.10" path="kernel/rockchip/kernel-5.10" remote="ar_gh" revision="master" />
