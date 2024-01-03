@@ -12,7 +12,6 @@
 		<linkfile src="target" dest="build/target" />
 		<linkfile src="tools" dest="build/tools" />
 	</project>
-	<project name="platform/bootable/recovery/recovery" path="bootable/recovery" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project name="rk/platform/vendor/rockchip/hardware/hardware" path="vendor/rockchip/hardware" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project clone-depth="1" name="platform/prebuilts/module_sdk/module_sdk" path="prebuilts/module_sdk" remote="rk" upstream="refs/tags/Android12_Radxa_rk12_12.1" />
 
