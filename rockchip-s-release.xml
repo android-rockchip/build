@@ -5,7 +5,10 @@
 	<remote name="rk" fetch="https://gitlab.com/rockchip_android_s" />
 	<remote name="rk29" fetch="https://gitlab.com/rockchip_android_s" />
 	<remote name="rk_legacy" fetch="https://gitlab.com/rockchip_android_s" />
+	<remote name="gapps" fetch="https://gitlab.com/MindTheGapps/" />
 	<remote name="ar_gh" fetch="https://github.com/android-rockchip" />
 
 	<include name="Android12_rkr12_custom.xml" />
+	
+	<project path="vendor/gapps" name="vendor_gapps" remote="gapps" revision="sigma" />
 </manifest>
