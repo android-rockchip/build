@@ -40,11 +40,10 @@
 	<project groups="device,beagle_x15,pdk" name="device/ti/beagle-x15" path="device/ti/beagle_x15" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="docs/android" path="RKDocs/android" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="docs/common" path="RKDocs/common" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
-	<project name="external/camera_engine_rkaiq" remote="rk" revision="refs/tags/Android12_Radxa_rk12_12.1" />
+	<project name="external/camera_engine_rkaiq" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="vts,pdk" name="kernel/configs" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project clone-depth="1" groups="pdk" name="kernel/prebuilts/5.10/arm64" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="vts,pdk" name="kernel/tests" revision="refs/tags/Android12_Radxa_rkr14.2" />
-	<project name="linux/app/rkaiq_tool_server" path="external/rkaiq_tool_server" remote="rk29" revision="refs/tags/Android12_Radxa_rk12_12.1" />
 	<project name="linux/linux-rga" path="hardware/rockchip/librga" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/art" path="art" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/bionic" path="bionic" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -84,7 +83,7 @@
 	<project groups="pdk" name="platform/external/FP16" path="external/FP16" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/external/FXdiv" path="external/FXdiv" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/external/ImageMagick" path="external/ImageMagick" revision="refs/tags/Android12_Radxa_rkr14.2" />
-	<project name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS" revision="refs/tags/android-12.1-mid-rkr8" />
+	<project name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/external/OpenCSD" path="external/OpenCSD" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/external/XNNPACK" path="external/XNNPACK" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -770,7 +769,8 @@
 		<linkfile dest="kernel-5.10/kernel/configs/non_debuggable.config" src="configs/non_debuggable.config" />
 		<linkfile dest="kernel-5.10/kernel/configs/pcie_wifi.config" src="configs/pcie_wifi.config" />
 		<linkfile dest="kernel-5.10/kernel/configs/pcie_wifi_infineon.config" src="configs/pcie_wifi_infineon.config" />
-		<linkfile dest="kernel-5.10/kernel/configs/rk3588_reverse.config" src="configs/rk3588_reverse.config" />
+		<linkfile dest="kernel-5.10/kernel/configs/sdio_wifi_cywdhd.config" src="configs/sdio_wifi_cywdhd.config" />
+		<linkfile dest="kernel-5.10/kernel/configs/rk3588_vehicle.config" src="configs/rk3588_vehicle.config" />
 	</project>
 	<project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -942,7 +942,7 @@
 	<project clone-depth="1" groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project clone-depth="1" groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project clone-depth="1" groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="refs/tags/Android12_Radxa_rkr14.2" />
-	<project clone-depth="1" name="platform/prebuilts/module_sdk" path="prebuilts/module_sdk" remote="rk" upstream="rk33/mid/12.0_express/develop" />
+	<project clone-depth="1" name="platform/prebuilts/module_sdk" path="prebuilts/module_sdk" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project clone-depth="1" groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project clone-depth="1" groups="darwin,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project clone-depth="1" groups="linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -985,7 +985,7 @@
 	<project groups="pdk" name="platform/system/libziparchive" path="system/libziparchive" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/system/linkerconfig" path="system/linkerconfig" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/system/logging" path="system/logging" revision="refs/tags/Android12_Radxa_rkr14.2" />
-	<project groups="pdk" name="platform/system/media" path="system/media" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="platform/system/media" path="system/media" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/system/memory/libdmabufheap" path="system/memory/libdmabufheap" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/system/memory/libion" path="system/memory/libion" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project groups="pdk" name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -1055,11 +1055,13 @@
 	<project groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" name="platform/tools/trebuchet" path="tools/trebuchet" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2">
-		<copyfile dest=".classpath" src=".classpath" />
-		<copyfile dest="mkimage.sh" src="mkimage.sh" />
-		<copyfile dest="javaenv.sh" src="javaenv.sh" />
-		<copyfile dest="build.sh" src="build/rockchip/build.sh" />
-		<copyfile dest="mkimage_ab.sh" src="mkimage_ab.sh" />
+		<linkfile dest=".classpath" src=".classpath" />
+		<linkfile dest="mkimage.sh" src="mkimage.sh" />
+		<linkfile dest="javaenv.sh" src="javaenv.sh" />
+		<linkfile dest="build.sh" src="build/rockchip/build.sh" />
+		<linkfile dest="mkimage_ab.sh" src="mkimage_ab.sh" />
+		<linkfile dest="kernel-4.19/.find-ignore" src="build/rockchip/blank_file" />
+		<linkfile dest="kernel-5.10/.find-ignore" src="build/rockchip/blank_file" />
 	</project>
 	<project name="rk/hardware/libgralloc/bifrost" path="hardware/rockchip/libgralloc/bifrost" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/hardware/libgralloc/midgard" path="hardware/rockchip/libgralloc/midgard" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -1099,11 +1101,13 @@
 	<project name="rk/hardware/rk35/udc_set" path="hardware/rockchip/udc_set" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/hardware/rk35/usb" path="hardware/rockchip/usb" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/hardware/rk35/vibrator_aidl" path="hardware/rockchip/vibrator_aidl" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/hardware/rockchip/hdcp_release" path="hardware/rockchip/hdcp2" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/kernel" path="kernel-5.10" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/libiep" path="hardware/rockchip/libiep" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/libpq-release" path="hardware/rockchip/libpq" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/librkcrypto" path="hardware/rockchip/librkcrypto" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/libsvep" path="hardware/rockchip/libsvep" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/libvendor_storage" path="hardware/rockchip/libvendor_storage" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/packages/apps/DisplayAdjust" path="packages/apps/DisplayAdjust" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/platform/external/abc" path="external/abc" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/platform/external/io" path="external/io" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
@@ -1113,15 +1117,16 @@
 	<project name="rk/platform/system/rk_tee_user" path="external/rk_tee_user" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/platform/vendor/Widevine" path="vendor/widevine" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
-	<project name="rk/platform/vendor/rockchip/hardware" path="vendor/rockchip/hardware" remote="rk" revision="refs/tags/Android12_Radxa_rk12_12.1" />
-	<project name="rk/platform/vendor/rockchip/hardware/codec2" path="vendor/rockchip/hardware/interfaces/codec2" remote="rk" revision="refs/tags/Android12_Radxa_rk12_12.1" />
-	<project name="rk/platform/vendor/rockchip/hardware/neuralnetworks" path="vendor/rockchip/hardware/interfaces/neuralnetworks" remote="rk" revision="refs/tags/Android12_Radxa_rk12_12.1" />
-	<project name="rk/platform/vendor/rockchip/hardware/rksoundsetting" path="vendor/rockchip/hardware/interfaces/rksoundsetting" remote="rk" revision="refs/tags/Android12_Radxa_rk12_12.1" />
-	<project name="rk/platform/vendor/rockchip/hardware/rockit" path="vendor/rockchip/hardware/interfaces/rockit" remote="rk" revision="refs/tags/Android12_Radxa_rk12_12.1" />
-	<project name="rk/prebuilts/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu" remote="rk29" upstream="master" />
-	<project name="rk/prebuilts/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf" remote="rk29" upstream="master" />
-	<project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rk29" upstream="master" />
-	<project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk29" upstream="master" />
+	<project name="rk/platform/vendor/rockchip/hardware" path="vendor/rockchip/hardware" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/platform/vendor/rockchip/hardware/codec2" path="vendor/rockchip/hardware/interfaces/codec2" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/platform/vendor/rockchip/hardware/neuralnetworks" path="vendor/rockchip/hardware/interfaces/neuralnetworks" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/platform/vendor/rockchip/hardware/rksoundsetting" path="vendor/rockchip/hardware/interfaces/rksoundsetting" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/platform/vendor/rockchip/hardware/rockit" path="vendor/rockchip/hardware/interfaces/rockit" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/platform/vendor/rockchip/hardware/tv_input" path="vendor/rockchip/hardware/interfaces/tv" remote="rk" revision="refs/tags/Android12_Radxa_rkr14.2" />
+	<project name="rk/prebuilts/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu" remote="rk29" revision="master" />
+	<project name="rk/prebuilts/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf" remote="rk29" revision="master" />
+	<project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rk29" revision="master" />
+	<project name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk29" revision="master" />
 	<project name="rk/rkCamera2" path="packages/apps/rkCamera2" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/rkbin" path="rkbin" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />
 	<project name="rk/rknn-toolkit2" path="hardware/rockchip/rknn-toolkit2" remote="rk29" revision="refs/tags/Android12_Radxa_rkr14.2" />

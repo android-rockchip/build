@@ -6,21 +6,33 @@
 	<remove-project name="rk/platform/vendor/rockchip/hardware" />
 	<remove-project name="platform/prebuilts/module_sdk" />
 	<!-- gitlab conflict end -->
-	
+
 	<!-- Radxa customization -->
+	<remove-project name="rk/kernel" />
 	<remove-project name="RKTools" />
 	<remove-project name="rk/device/rockchip/rk3588" />
-	<remove-project name="rk/kernel" />
 	<remove-project name="platform/mkcombinedroot" />
 	<remove-project name="rk/device/rockchip/rksdk" />
 	<remove-project name="rk/u-boot" />
 	<remove-project name="rk/platform/vendor/rockchip/common" />
+	<remove-project name="platform/bootable/recovery/recovery" />
 	<remove-project name="platform/frameworks/base" />
 	<remove-project name="platform/frameworks/opt/net/wifi" />
 	<remove-project name="platform/hardware/realtek" />
+	<remove-project name="platform/hardware/aic" />
+	<remove-project name="platform/packages/apps/Camera2" />
+	<remove-project name="platform/frameworks/native" />
+	<remove-project name="platform/hardware/interfaces" />
+	<remove-project name="platform/hardware/ril" />
+	<remove-project name="rk/hardware/rk29/camera_v3" />
 	<remove-project name="external/camera_engine_rkaiq" />
+	<remove-project name="platform/packages/apps/Launcher3" />
+	<remove-project name="platform/packages/apps/Settings" />
+	<remove-project name="rk/hardware/rk29/lights_aidl" />
+	<remove-project name="rk/hardware/libgralloc/bifrost" />
+	<remove-project name="rk/hardware/rk29/drmservice" />
 	<!-- Radxa customization end -->
-	
+
 	<!-- gitlab size reduce -->
 	<remove-project name="platform/external/chromium-webview" />
 	<remove-project name="kernel/prebuilts/5.10/arm64" />
@@ -30,7 +42,7 @@
 	<remove-project name="platform/prebuilts/sdk" />
 	<remove-project name="platform/prebuilts/tools" />
 	<!-- gitlab size reduce end-->
-	
+
 	<remove-project name="platform/external/OpenCL-CTS" />
 
 	<!-- We don't need any darwin related stuff-->
