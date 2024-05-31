@@ -15,19 +15,9 @@
 	<project name="rk/platform/vendor/rockchip/hardware/hardware" path="vendor/rockchip/hardware" remote="rk" revision="3978bdf1e0967c122c58c319be662e80d83cdadc" upstream="refs/tags/android12-radxa-rkr14.2" />
 	<project clone-depth="1" name="platform/prebuilts/module_sdk/module_sdk" path="prebuilts/module_sdk" remote="rk" revision="ac7911db692075adcde6b6e737748ec229f320e9" upstream="refs/tags/android12-radxa-rkr14.2" />
 
-	<project name="rk/kernel" path="kernel-5.10" remote="rk29" revision="1ce7ffcd9c17581c92724c2c16514b57f8f6e48b" upstream="refs/tags/android12-radxa-rkr14.2" />
 	<project name="RKTools" remote="rk" revision="78234ed700f4d8e2278eb483f86c567d05782e79" upstream="refs/tags/android12-radxa-rkr14.2" />
 	<project name="rk/device/rockchip/rk3588" path="device/rockchip/rk3588" remote="rk" revision="cf71b4bc1964b26dff0fc9979c3d51b89385da2d" upstream="refs/tags/android12-radxa-rkr14.2" />
 	<project name="platform/mkcombinedroot" path="mkcombinedroot" remote="rk" revision="5f4893ca00217d9abc18cc88fd00114a685b93fa" upstream="refs/tags/android12-radxa-rkr14.2" />
-	<project name="rk/device/rockchip/rksdk" path="device/rockchip/common" remote="rk" revision="f9043e120f1adfdba11d485e9935bd683bbfcbac" upstream="refs/tags/android12-radxa-rkr14.2">
-		<linkfile dest=".classpath" src=".classpath" />
-		<linkfile dest="mkimage.sh" src="mkimage.sh" />
-		<linkfile dest="javaenv.sh" src="javaenv.sh" />
-		<linkfile dest="build.sh" src="build/rockchip/build.sh" />
-		<linkfile dest="mkimage_ab.sh" src="mkimage_ab.sh" />
-		<linkfile dest="kernel-4.19/.find-ignore" src="build/rockchip/blank_file" />
-		<linkfile dest="kernel-5.10/.find-ignore" src="build/rockchip/blank_file" />
-	</project>
 
 	<project name="rk/platform/vendor/rockchip/common" path="vendor/rockchip/common" remote="rk" revision="1a225ab47bfaa78d76ab9bac18f1c7620cabbdd8" upstream="refs/tags/android12-radxa-rkr14.2" />
 	<project groups="pdk" name="platform/bootable/recovery/recovery" path="bootable/recovery" revision="44ed2b30876adadc0a5c65f2abead7ffc3f7c35c" upstream="refs/tags/android12-radxa-rkr14.2" />
