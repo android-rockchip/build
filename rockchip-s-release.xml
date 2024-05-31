@@ -8,7 +8,7 @@
 	<remote name="gapps" fetch="https://gitlab.com/MindTheGapps/" />
 	<remote name="ar_gh" fetch="https://github.com/android-rockchip" />
 
-	<include name="Android12_rkr12_custom.xml" />
+	<include name="Android12_rkr14_custom.xml" />
 	
 	<project path="vendor/gapps" name="vendor_gapps" remote="gapps" revision="sigma" />
 </manifest>
